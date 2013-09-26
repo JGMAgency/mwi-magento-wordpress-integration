@@ -43,11 +43,9 @@ Your ratings really make a difference to me, and other users! Thanks.
 
 =Notes=
 
-This plugin does not allow you to completely avoid using Magento on your website, it simply helps you to get your WordPress and Magento themes seamlessly integrated.
-
-**If upgrading, please back up your database first!**
-
-Follow me on Twitter to keep up with the latest updates [@jamesckemp](https://twitter.com/#!/jamesckemp/)
+*	This plugin does not allow you to completely avoid using Magento on your website, it simply helps you to get your WordPress and Magento themes seamlessly integrated.
+*	**If upgrading, please back up your database first!**
+*	Follow me on Twitter to keep up with the latest updates [@jamesckemp](https://twitter.com/#!/jamesckemp/)
 
 == Installation ==
 
