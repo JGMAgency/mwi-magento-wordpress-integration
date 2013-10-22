@@ -6,6 +6,8 @@ Description: Magento WordPress Integration is the simplest way to get blocks & s
 Author: James Kemp
 Version: 3.0.1
 Author URI: http://www.jckemp.com/
+License: GPL
+Copyright: James Kemp
 */
 
 $GLOBALS['layout'] = '';
