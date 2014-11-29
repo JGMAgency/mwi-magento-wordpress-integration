@@ -12,12 +12,12 @@ Copyright: James Kemp
 
 class jck_mwi {
     
-    protected $name = 'Magento WordPress Integration';
-    protected $shortname = 'Mage/WP';
-    protected $slug = 'jckmwi';
-    protected $version = "3.1.0";
-    protected $plugin_path;
-    protected $plugin_url;
+    public $name = 'Magento WordPress Integration';
+    public $shortname = 'Mage/WP';
+    public $slug = 'jckmwi';
+    public $version = "3.1.0";
+    public $plugin_path;
+    public $plugin_url;
 	
 /**	=============================
     *
