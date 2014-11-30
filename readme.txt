@@ -57,6 +57,9 @@ Please visit the [Magento Wordpress Integration website](http://mwi-plugin.com/d
 
 == Changelog ==
 
+= 3.1.1 =
+[readme] Updated readme
+
 = 3.1.0 =
 [update] Updated plugin structure and refined coding
 
