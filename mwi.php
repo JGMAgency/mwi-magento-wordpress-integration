@@ -385,14 +385,37 @@ class jck_mwi {
 	public function frontend_styles_scripts() {
     	
     	// styles
-        wp_register_style( 'mwi-addon-styles', plugins_url('assets/frontend/css/addon-styles.css', __FILE__) );
-		wp_enqueue_style( 'mwi-addon-styles' );
+    	if( $this->active_addons() &&  $this->getValue('styles') ) {
+            wp_register_style( 'mwi-addon-styles', plugins_url('assets/frontend/css/addon-styles.css', __FILE__) );
+		    wp_enqueue_style( 'mwi-addon-styles' );
+		}
 		
     	// scripts
 		wp_register_script( 'mwi-js', plugins_url('/assets/frontend/js/scripts.min.js', __FILE__), array(), false, true);
 		wp_enqueue_script( 'mwi-js' );
 		
 	} 
+	
+/**	=============================
+    *
+    * Check for Active Addons
+    *
+    * return array|bool Returns array of active addons, if found, or false if not
+    *
+    ============================= */
+    
+    public function active_addons() {
+        
+        $activeAddons = array();
+        
+        if ( in_array( 'mwi-shortcodes/mwi-shortcodes.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) )
+            $activeAddons[] = 'mwi-shortcodes';
+            
+        if( empty($activeAddons) )
+            return false;
+        
+        return $activeAddons;        
+    }
   
 }
 
