@@ -30,7 +30,6 @@
     }
     
     .jck-product__price {
-        font-size: 115%;
         margin: 0 0 $spacing;
         
         .old-price,
@@ -39,6 +38,7 @@
             display: inline;
             margin: 0 5px 0 0;
             padding: 0;
+            font-size: 115%;
         }
         
         .old-price {

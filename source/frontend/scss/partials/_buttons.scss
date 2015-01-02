@@ -10,6 +10,9 @@ button.jck-product-btn {
     @include vendor-prefix(transition, all 0.2s);
     @include vendor-prefix(border-radius, 2px);
     @include vendor-prefix(box-shadow, none);
+    @include vendor-prefix(text-shadow, none);
+    font-weight: normal;
+    margin: $spacing 0 0;
     
     &:hover {
        background: lighten($black, 25%); 
