@@ -60,6 +60,7 @@ Please visit the [Magento Wordpress Integration website](http://mwi-plugin.com/d
 = 3.1.3 (01/01/15) =
 [update] Recreate addon styles and assets folder structure
 [update] New styles for new addons
+[update] Remove and reorganise assets
 
 = 3.1.2 =
 [update] Check for valid functions.php to reduce errors from occuring
