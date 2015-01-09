@@ -13,6 +13,7 @@ button.jck-product-btn {
     @include vendor-prefix(text-shadow, none);
     font-weight: normal;
     margin: $spacing 0 0;
+    font-size: 1em;
     
     &:hover {
        background: lighten($black, 25%); 
