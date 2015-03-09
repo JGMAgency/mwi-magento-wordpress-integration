@@ -60,6 +60,7 @@ Please visit the [Magento Wordpress Integration website](http://mwi-plugin.com/d
 = 3.1.4 (25/01/15) =
 * [update] Move MCE button to main plugin so it can be shared
 * [update] Add helpers class
+* [update] Add admin js for cat-listing shortcode add-on
 
 = 3.1.3 (01/01/15) =
 * [update] Recreate addon styles and assets folder structure
