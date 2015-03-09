@@ -210,16 +210,159 @@
                     value: '',
                     onclick: function() {
                         editor.windowManager.open( {
-                            title: 'Insert Layout Block',
+                            title: 'Insert Category Listing',
                             body: [
                                 {
                                     type: 'textbox',
-                                    name: 'name',
-                                    label: 'Block Name'
+                                    name: 'cat',
+                                    label: 'Category ID',
+                                    value: '2'
+                                },
+                                {
+                                    type: 'textbox',
+                                    name: 'ppp',
+                                    label: 'Products per Page',
+                                    value: '12'
+                                },
+                                {
+                                    type: 'listbox', 
+                                    name: 'cols', 
+                                    label: 'Number of Columns', 
+                                    'values': [
+                                        {text: '1', value: "1"},
+                                        {text: '2', value: "2"},
+                                        {text: '3', value: "3"},
+                                        {text: '4', value: "4"},
+                                        {text: '5', value: "5"}
+                                    ],
+                                    onPostRender: function() {
+                                        // Select the third item by default
+                                        editor.irstyle_control = this;
+                                        this.value('3');
+                                    }
+                                },
+                                {
+                                    type: 'listbox', 
+                                    name: 'out_of_stock', 
+                                    label: 'Show Out of Stock?', 
+                                    'values': [
+                                        {text: 'Yes', value: "true"},
+                                        {text: 'No', value: "false"}
+                                    ],
+                                    onPostRender: function() {
+                                        // Select the no by default
+                                        editor.irstyle_control = this;
+                                        this.value('false');
+                                    }
+                                },
+                                {
+                                    type: 'listbox', 
+                                    name: 'title', 
+                                    label: 'Show Title?', 
+                                    'values': [
+                                        {text: 'Yes', value: "true"},
+                                        {text: 'No', value: "false"}
+                                    ]
+                                },
+                                {
+                                    type: 'listbox', 
+                                    name: 'title_tag', 
+                                    label: 'Title Tag', 
+                                    'values': [
+                                        {text: 'None', value: ""},
+                                        {text: 'h1', value: "h1"},
+                                        {text: 'h2', value: "h2"},
+                                        {text: 'h3', value: "h3"},
+                                        {text: 'h4', value: "h4"},
+                                        {text: 'h5', value: "h5"},
+                                        {text: 'p', value: "p"},
+                                        {text: 'span', value: "span"}
+                                    ]
+                                },
+                                {
+                                    type: 'listbox', 
+                                    name: 'desc', 
+                                    label: 'Show Description?', 
+                                    'values': [
+                                        {text: 'Yes', value: "true"},
+                                        {text: 'No', value: "false"}
+                                    ]
+                                },
+                                {
+                                    type: 'listbox', 
+                                    name: 'img', 
+                                    label: 'Show Image?', 
+                                    'values': [
+                                        {text: 'Yes', value: "true"},
+                                        {text: 'No', value: "false"}
+                                    ]
+                                },
+                                {
+                                    type: 'textbox',
+                                    name: 'img_width',
+                                    label: 'Image Width',
+                                    value: '400'
+                                },
+                                {
+                                    type: 'listbox', 
+                                    name: 'price', 
+                                    label: 'Show Price?', 
+                                    'values': [
+                                        {text: 'Yes', value: "true"},
+                                        {text: 'No', value: "false"}
+                                    ]
+                                },
+                                {
+                                    type: 'listbox', 
+                                    name: 'type', 
+                                    label: 'Type', 
+                                    'values': [
+                                        {text: 'Add to Cart', value: "add"},
+                                        {text: 'View Product', value: "view"}
+                                    ]
+                                },
+                                {
+                                    type: 'listbox', 
+                                    name: 'btn_color', 
+                                    label: 'Button Colour', 
+                                    'values': [
+                                        {text: 'None', value: "none"},
+                                        {text: 'Blue', value: "blue"},
+                                        {text: 'Turquoise', value: "turquoise"},
+                                        {text: 'Green', value: "green"},
+                                        {text: 'Purple', value: "purple"},
+                                        {text: 'Yellow', value: "yellow"},
+                                        {text: 'Orange', value: "orange"},
+                                        {text: 'Red', value: "red"},
+                                        {text: 'Grey', value: "grey"},
+                                        {text: 'Light Grey', value: "light-grey"},
+                                        {text: 'Dark Grey', value: "dark-grey"}
+                                    ],
+                                    onPostRender: function() {
+                                        // Select blue by default
+                                        editor.irstyle_control = this;
+                                        this.value('blue');
+                                    }
                                 }
                             ],
-                            onsubmit: function( e ) {                                        
-                                editor.insertContent( '[mwi-block name="' + e.data.name + '"]');
+                            onsubmit: function( e ) {
+                                
+                                var params = "";
+                                
+                                params += 'cat="' + e.data.cat.replace(/\s/g, '') + '" ';
+                                params += 'ppp="' + e.data.ppp + '" ';
+                                params += 'cols="' + e.data.cols + '" ';
+                                if(e.data.out_of_stock == "true") params += 'out_of_stock="' + e.data.out_of_stock + '" ';
+                                if(e.data.title == "false") params += 'title="' + e.data.title + '" ';
+                                if(e.data.title_tag != "") params += 'title_tag="' + e.data.title_tag + '" ';
+                                if(e.data.desc == "false") params += 'desc="' + e.data.desc + '" ';
+                                if(e.data.img == "false") params += 'img="' + e.data.img + '" ';
+                                params += 'img_width="' + e.data.img_width + '" ';
+                                if(e.data.price == "false") params += 'price="' + e.data.price + '" ';
+                                params += 'type="' + e.data.type + '" ';
+                                params += 'btn_color="' + e.data.btn_color + '" ';
+                                
+                                editor.insertContent( '[mwi-cat-listing ' + params + ']');
                             }
                         });
                     }     
