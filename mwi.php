@@ -112,8 +112,8 @@ class jck_mwi {
             
             if(!$module):
             
-                $customerSession = Mage::getSingleton('customer/session');	
-                $logged = ($customerSession->isLoggedIn()) ? 'customer_logged_in' : 'customer_logged_out';  
+                $customer_session = Mage::getSingleton('customer/session');	
+                $logged = ($customer_session->isLoggedIn()) ? 'customer_logged_in' : 'customer_logged_out';  
                 
                 $layout->getUpdate()
                     ->addHandle('default')
@@ -510,19 +510,19 @@ class jck_mwi {
     
     public function active_addons() {
         
-        $activeAddons = array();
+        $active_addons = array();
         $active_plugins = apply_filters( 'active_plugins', get_option( 'active_plugins' ) );
         
         if ( in_array( 'mwi-shortcodes/mwi-shortcodes.php', $active_plugins ) )
-            $activeAddons[] = 'mwi-shortcodes';
+            $active_addons[] = 'mwi-shortcodes';
             
         if ( in_array( 'mwi-category-listing/mwi-category-listing.php', $active_plugins ) )
-            $activeAddons[] = 'mwi-category-listing';
+            $active_addons[] = 'mwi-category-listing';
             
-        if( empty($activeAddons) )
+        if( empty($active_addons) )
             return false;
         
-        return $activeAddons;        
+        return $active_addons;        
     }
   
 }

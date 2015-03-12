@@ -31,8 +31,11 @@
     .mwi-select__caret {
         color: #ccc;
         position: absolute;
-        top: 3px;
+        top: 50%;
+        margin-top: -5px;
         right: 5px;
         z-index: 5;
         font-size: 15px;
+        height: 12px;
+        line-height: 1;
     }
