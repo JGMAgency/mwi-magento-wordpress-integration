@@ -5,31 +5,38 @@
     border: 1px solid $border-color;
     border-radius: 5px;
     display: block;
+    
+    * {
+        box-sizing: border-box;
+    }
 }
 
     .mwi-pagination-item {
-        background: #3498db;
+        background: none;
         display: block;
         width: auto;
         min-width: 30px;
-        color: #fff;
         padding: 0;
         height: 28px;
-        line-height: 28px;
+        line-height: 26px;
         border-radius: 3px;
         -webkit-font-smoothing: antialiased;
         font-size: 14px;
         border: none;
         text-align: center;
+        color: #333;
+        border: 1px solid $border-color;
+        box-shadow: none;
+        text-shadow: none;
         
         &--active,
         &:hover,
         &:active,
         &:focus {
-            color: #fff;
-            background: darken(#3498db, 10%);
-            padding: 0;
-            border: none;
+            border: 1px solid darken( $border-color, 10% );
+            outline: none;
+            box-shadow: none;
+            text-shadow: none;
         }
     }
     
@@ -86,7 +93,8 @@
             
             &.active {
                 @extend .mwi-pagination-item;
-                background: darken(#3498db, 10%);
+                background: $border-color;
+                border-color: darken( $border-color, 10% );
                 
                 [data-eq-state="small"] &,
                 [data-eq-state="medium"] & {
@@ -100,8 +108,9 @@
                 text-decoration: none;
                 
                 &:hover {
-                    color: #fff;
-                    background: darken(#3498db, 10%);
+                    border-color: darken( $border-color, 10% );
+                    background: none;
+                    text-decoration: none;
                 }
             }
         }
@@ -163,3 +172,45 @@
                 display: none;
             }
         }
+        
+// colors
+
+.mwi-pagination-wrap--blue {
+    @include pagination-color($blue);
+}
+
+.mwi-pagination-wrap--turquoise {
+    @include pagination-color($turquoise);
+}
+
+.mwi-pagination-wrap--green {
+    @include pagination-color($green);
+}
+
+.mwi-pagination-wrap--purple {
+    @include pagination-color($purple);
+}
+
+.mwi-pagination-wrap--yellow {
+    @include pagination-color($yellow);
+}
+
+.mwi-pagination-wrap--orange {
+    @include pagination-color($orange);
+}
+
+.mwi-pagination-wrap--red {
+    @include pagination-color($red);
+}
+
+.mwi-pagination-wrap--grey {
+    @include pagination-color($grey);
+}
+
+.mwi-pagination-wrap--light-grey {
+    @include pagination-color($light-grey, #333);
+}
+
+.mwi-pagination-wrap--dark-grey {
+    @include pagination-color($dark-grey);
+}
