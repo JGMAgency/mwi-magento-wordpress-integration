@@ -55,6 +55,9 @@ Please visit the [Magento Wordpress Integration website](http://mwi-plugin.com/d
 
 == Changelog ==
 
+= 3.1.8 (13/03/15) =
+* [assets] Attempting assets deployment
+
 = 3.1.7 (12/03/15) =
 * [assets] Attempting assets deployment
 
