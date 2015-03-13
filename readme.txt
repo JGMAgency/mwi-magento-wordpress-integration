@@ -57,6 +57,7 @@ Please visit the [Magento Wordpress Integration website](http://mwi-plugin.com/d
 
 = 3.1.5 (12/03/15) =
 * [readme] Changed readme changelog layout
+* [assets] Add new banner and icon assets
 
 = 3.1.4 (12/03/15) =
 * [update] Move MCE button to main plugin so it can be shared
