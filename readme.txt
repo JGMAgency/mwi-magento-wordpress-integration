@@ -1,5 +1,5 @@
 === Magento Wordpress Integration ===
-Contributors: jamesckemp
+Contributors: jamesckemp, gigasavvy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=NFBMUSAPCTF88&lc=US&item_name=James%20Kemp&currency_code=GBP&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted
 Tags: magento,wordpress,block,integration,sessions,static blocks,magento cart,cart
 Requires at least: 3.0
@@ -12,7 +12,7 @@ Magento WordPress Integration is the easiest way to get blocks, sessions and pro
 
 == Description ==
 
-Magento WordPress Integration allows you to add any Magento blocks to your WordPress theme, including ones you have created yourself, and static blocks created through the Magento admin area. 
+Magento WordPress Integration allows you to add any Magento blocks to your WordPress theme, including ones you have created yourself, and static blocks created through the Magento admin area.
 
 The Magento WordPress Integration Plugin allows you to to the following:
 
