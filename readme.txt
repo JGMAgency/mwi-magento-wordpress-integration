@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=NFBMU
 Tags: magento,wordpress,block,integration,sessions,static blocks,magento cart,cart
 Requires at least: 3.0
 Tested up to: 4.4.1
-Stable tag: 3.2.2
+Stable tag: 3.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,7 +30,7 @@ The Magento WordPress Integration Plugin allows you to to the following:
 * 	[Support](http://wordpress.org/support/plugin/magento-wordpress-integration/)
 *	[FAQ](http://mwi-plugin.com/documentation/faq/)
 *	[MWI Demo](http://demo.mwi-plugin.com/)
-*	[Single Sign-on for Magento and Wordpress](http://codecanyon.net/item/single-signon-for-magento-and-wordpress/861453?ref=jamesckemp)
+*	[Single Sign-on for Magento and Wordpress](http://codecanyon.net/item/single-signon-for-magento-and-wordpress/861453?ref=gigasavvy)
 
 =Please Leave a Rating=
 
@@ -40,7 +40,7 @@ Your ratings really make a difference to me, and other users! Thanks.
 
 *	This plugin does not allow you to completely avoid using Magento on your website, it simply helps you to get your WordPress and Magento themes seamlessly integrated.
 *	**If upgrading, please back up your database first!**
-*	Follow me on Twitter to keep up with the latest updates [@jamesckemp](https://twitter.com/#!/jamesckemp/)
+*	Follow me on Twitter to keep up with the latest updates [@gigasavvy](https://twitter.com/#!/gigasavvy/)
 
 == Installation ==
 
@@ -51,6 +51,12 @@ Please visit the [Magento Wordpress Integration website](http://mwi-plugin.com/d
 Please visit the [Magento Wordpress Integration website](http://mwi-plugin.com/documentation/faq/) for frequently asked questions.
 
 == Changelog ==
+
+= 3.2.4 (20/01/16) =
+* [update] Updated header image
+
+= 3.2.3 (20/01/16) =
+* [update] Updated header image
 
 = 3.2.1 (15/06/15) =
 * [fix] Change of version number

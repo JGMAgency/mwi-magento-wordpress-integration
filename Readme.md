@@ -26,11 +26,11 @@ Useful Links
 * 	[Support](http://wordpress.org/support/plugin/magento-wordpress-integration/)
 *	[FAQ](http://mwi-plugin.com/documentation/faq/)
 *	[MWI Demo](http://demo.mwi-plugin.com/)
-*	[Single Sign-on for Magento and Wordpress](http://codecanyon.net/item/single-signon-for-magento-and-wordpress/861453?ref=jamesckemp)
+*	[Single Sign-on for Magento and Wordpress](http://codecanyon.net/item/single-signon-for-magento-and-wordpress/861453?ref=gigasavvy)
 
 Notes
 =====
 
 *	This plugin does not allow you to completely avoid using Magento on your website, it simply helps you to get your WordPress and Magento themes seamlessly integrated.
 *	**If upgrading, please back up your database first!**
-*	Follow me on Twitter to keep up with the latest updates [@jamesckemp](https://twitter.com/#!/jamesckemp/)
+*	Follow us on Twitter to keep up with the latest updates [@gigasavvy](https://twitter.com/#!/gigasavvy/)
