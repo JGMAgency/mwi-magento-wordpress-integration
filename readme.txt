@@ -52,7 +52,7 @@ Please visit the [Magento Wordpress Integration website](http://mwi-plugin.com/d
 
 == Changelog ==
 
-= 3.2.4 (20/01/16) =
+= 3.2.4 (21/01/16) =
 * [update] Updated header image
 
 = 3.2.3 (20/01/16) =

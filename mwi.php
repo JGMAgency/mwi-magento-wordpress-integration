@@ -15,7 +15,7 @@ class jck_mwi {
     public $name = 'Magento WordPress Integration';
     public $shortname = 'Mage/WP';
     public $slug = 'jckmwi';
-    public $version = "3.2.3";
+    public $version = "3.2.4";
     public $plugin_path;
     public $plugin_url;
     public $helpers;
